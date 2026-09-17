@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+
+<body>
+
+    <video id="fondo-video" autoplay muted loop playsinline>
+        <source src="fondos mov/esferas fondo.mp4" type="video/mp4">
+    </video>
+
+    <audio id="musica" loop>
+        <source src="sonidos/dragon-ball.mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+
+        <h1 class="dragon-logo">
+            <span class="dragon-text">DRAG</span><span class="dragon-ball">★</span><span class="n-text">N</span><span class="ball-text"> BALL</span>
+        </h1>
+
+        <nav class="menu">
+
+            <button onclick="abrirPagina('inicio')">
+                Inicio
+            </button>
+
+            <button onclick="abrirPagina('nosotros')">
+                Nosotros
+            </button>
+
+            <button onclick="abrirPagina('personajes')">
+                Personajes
+            </button>
+
+            <button onclick="abrirPagina('transformaciones')">
+                Transformaciones
+            </button>
+
+            <button onclick="abrirPagina('usuario')">
+                Usuario
+            </button>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="inicio" class="pagina activa">
+
+            <div class="contenido">
+
+                <p class="subtitulo">
+                    UNIVERSO
+                </p>
+
+                <h2>
+                    DRAGON BALL
+                </h2>
+
+                <p class="descripcion">
+                    Bienvenido a Dragon Ball. Personajes,
+                    transformaciones e información de la serie.
+                </p>
+
+                <div class="botones">
+
+                    <button
+                        class="boton principal"
+                        onclick="abrirPagina('personajes')">
+                        Explorar personajes
+                    </button>
+
+                    <button
+                        class="boton secundario"
+                        onclick="abrirPagina('nosotros')">
+                        Conocer más
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="nosotros" class="pagina">
+
+            <div class="contenido">
+
+                <p class="subtitulo">
+                    CONOCE NUESTRO SITIO
+                </p>
+
+                <h2>
+                    NOSOTROS
+                </h2>
+
+                <p class="descripcion">
+                    Esta página fue creada para reunir información
+                    de Dragon Ball.
+                </p>
+
+                <div class="informacion">
+
+                    <div class="tarjeta">
+
+                        <h3>
+                            ¿Qué encontrarás?
+                        </h3>
+
+                        <p>
+                            Información sobre personajes
+                            y transformaciones de Dragon Ball.
+                        </p>
+
+                    </div>
+
+                    <div class="tarjeta">
+
+                        <h3>
+                            Nuestro objetivo
+                        </h3>
+
+                        <p>
+                            Crear un espacio sencillo para conocer
+                            más sobre este universo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="personajes" class="pagina">
+
+            <div class="contenido">
+
+                <p class="subtitulo">
+                    CONOCE A LOS
+                </p>
+
+                <h2>
+                    PERSONAJES
+                </h2>
+
+                <p class="descripcion">
+                    Aquí encontrarás los personajes de Dragon Ball.
+                </p>
+
+                <div class="personajes-contenedor">
+
+                    <div class="personaje-card">
+
+                        <div class="espacio-imagen">
+
+                            <img
+                                src="imagenes/GOKU.jpeg"
+                                alt="Goku">
+
+                        </div>
+
+                        <h3>
+                            Goku
+                        </h3>
+
+                        <p>
+                            Guerrero Saiyajin y protagonista
+                            de Dragon Ball.
+                        </p>
+
+                    </div>
+
+                    <div class="personaje-card">
+
+                        <div class="espacio-imagen">
+
+                            <img
+                                src="imagenes/vegueta.jpeg"
+                                alt="Vegeta">
+
+                        </div>
+
+                        <h3>
+                            Vegeta
+                        </h3>
+
+                        <p>
+                            Príncipe de los Saiyajin y guerrero
+                            de gran importancia.
+                        </p>
+
+                    </div>
+
+                    <div class="personaje-card">
+
+                        <div class="espacio-imagen">
+
+                            <img
+                                src="imagenes/picolo.jpeg"
+                                alt="Piccolo">
+
+                        </div>
+
+                        <h3>
+                            Piccolo
+                        </h3>
+
+                        <p>
+                            Uno de los guerreros que participa
+                            en las principales batallas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="transformaciones" class="pagina">
+
+            <div class="contenido">
+
+                <p class="subtitulo">
+                    CONOCE LAS
+                </p>
+
+                <h2>
+                    TRANSFORMACIONES
+                </h2>
+
+                <p class="descripcion">
+                    Algunas de las transformaciones más conocidas
+                    de Dragon Ball.
+                </p>
+
+                <div class="transformaciones-contenedor">
+
+                    <div class="tarjeta">
+
+                        <div class="espacio-imagen">
+
+                            <img
+                                src="imagenes/super sayayin.jpeg"
+                                alt="Super Saiyajin">
+
+                        </div>
+
+                        <h3>
+                            Super Saiyajin
+                        </h3>
+
+                        <p>
+                            Transformación que aumenta las
+                            capacidades del guerrero.
+                        </p>
+
+                    </div>
+
+                    <div class="tarjeta">
+
+                        <div class="espacio-imagen">
+
+                            <img
+                                src="imagenes/goku blue.jpeg"
+                                alt="Goku Blue">
+
+                        </div>
+
+                        <h3>
+                            Super Saiyajin Blue
+                        </h3>
+
+                        <p>
+                            Evolución de la transformación
+                            Super Saiyajin.
+                        </p>
+
+                    </div>
+
+                    <div class="tarjeta">
+
+                        <div class="espacio-imagen">
+
+                            <img
+                                src="imagenes/ultra instinto.jpeg"
+                                alt="Ultra Instinto">
+
+                        </div>
+
+                        <h3>
+                            Ultra Instinto
+                        </h3>
+
+                        <p>
+                            Una transformación de mayor poder.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="usuario" class="pagina">
+
+            <div class="contenido">
+
+                <p class="subtitulo">
+                    ÁREA DEL
+                </p>
+
+                <h2>
+                    USUARIO
+                </h2>
+
+                <p class="descripcion">
+                    Inicia sesión para entrar a tu espacio de usuario.
+                </p>
+
+                <div class="usuario-box">
+
+                    <h3>
+                        Iniciar sesión
+                    </h3>
+
+                    <p>
+                        Accede con tu cuenta de Google.
+                    </p>
+
+                    <div
+                        id="g_id_onload"
+                        data-client_id="TU_CLIENT_ID_AQUI"
+                        data-callback="manejarRespuestaGoogle"
+                        data-auto_prompt="false">
+                    </div>
+
+                    <div
+                        class="g_id_signin"
+                        data-type="standard"
+                        data-size="large"
+                        data-theme="filled_black"
+                        data-text="signin_with"
+                        data-shape="rectangular"
+                        data-logo_alignment="left">
+                    </div>
+
+                    <p id="usuarioGoogle"></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            DRAGON BALL ° ADSO
+        </p>
+
+    </footer>
+
+    <script>
+
+        function abrirPagina(nombrePagina) {
+
+            const paginas =
+                document.querySelectorAll(".pagina");
+
+            paginas.forEach(function(pagina) {
+
+                pagina.classList.remove("activa");
+
+            });
+
+            const paginaSeleccionada =
+                document.getElementById(nombrePagina);
+
+            if (paginaSeleccionada) {
+
+                paginaSeleccionada.classList.add("activa");
+
+            }
+
+        }
+
+        const musica =
+            document.getElementById("musica");
+
+        document.addEventListener(
+            "click",
+            function() {
+
+                musica.play().catch(function() {});
+
+            },
+            { once: true }
+        );
+
+        function manejarRespuestaGoogle(respuesta) {
+
+            const partes =
+                respuesta.credential.split(".");
+
+            const datos =
+                JSON.parse(
+                    atob(
+                        partes[1]
+                            .replace(/-/g, "+")
+                            .replace(/_/g, "/")
+                    )
+                );
+
+            document.getElementById(
+                "usuarioGoogle"
+            ).textContent =
+                "Bienvenido, " + datos.name;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
